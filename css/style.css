@@ -1,0 +1,177 @@
+/* ============ Common CSS ============== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+.container{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============ Reuseable Components ============== */
+
+.section-title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.section-description{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5rem;
+}
+
+/* ============ Header Part Starts ============== */
+
+header{
+    background:#222;
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap:30px
+}
+nav h3{
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+nav ul{
+    border-radius: 50px;
+    border:1px solid rgba(255,255,255,0.07);
+    padding:11px 4px;
+}
+nav li a{
+    color:#fffffff3;
+    padding:8px 20px;
+    font-weight: 500;
+}
+nav li a.active{
+    background: rgb(230, 83, 60);
+    border-radius: 50px;
+}
+.bars{
+    display: none;
+}
+.bars i{
+    color:#fffffff3;
+    font-size: 2.2rem;
+}
+.hero{
+    display: flex;
+    align-items: center;
+}
+.hero > div{
+    flex:1
+}
+.hero img{
+    width: 55%;
+    margin-left:120px ;
+}
+.hero .hero-img{
+    text-align: center;
+    position:relative
+}
+.hero h1{
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.1rem;
+    margin-bottom: 20px;
+    line-height: 4.8rem;
+}
+.hero h1 span{
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    font-weight: 100;
+    font-size: 5rem;
+}
+.hero p{
+    color: rgba(255, 255, 255,0.5);
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+.hero button{
+    background:  rgb(230, 83, 60);
+    color:#fffffff3;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border:none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+.hero button.hero-btn2{
+    background:none;
+    border:thin solid rgba(255, 255, 255,0.5);
+    margin-left: 10px;
+}
+.hero-img .item1{
+    background: rgba(255, 255, 255,0.1);
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    position:absolute;
+    top:23%;
+    right:2%;
+    text-align: left;
+    backdrop-filter: blur(5px);
+}
+.hero-img .item2{
+    background: rgba(255, 255, 255,0.1);
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    position:absolute;
+    bottom:12%;
+    left:17%;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items:center;
+    gap:15px
+}
+.item2 .item2-icon i{
+    background: rgb(230, 83, 60);
+    color:#fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center
+}
+.item1 h2,
+.item2 h2{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.item1 h5,
+.item2 h5{
+    color:rgba(255, 255, 255,0.7);
+    font-weight: 400;
+}
+
+
+
+
+/* ============ Header Part Ends ============== */

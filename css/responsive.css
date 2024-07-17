@@ -1,0 +1,70 @@
+/*========= Medium Device Breakpoint ==========*/
+
+@media screen and (max-width:991px) {
+    nav{
+        padding-bottom: 60px;
+    }
+    nav ul{
+        gap:0;
+    }
+    .hero img{
+        width: 100%;
+        margin-left:0 ;
+    }
+    .hero{
+        flex-direction: column;
+        gap:40px
+    }
+    header{
+        height: auto;
+    }
+    .hero-img .item1{
+        top:23%;
+        right:0;
+
+    }
+    .hero-img .item2{
+        bottom:12%;
+        left:0%;
+    }
+}
+
+
+
+/*========= Small Device Breakpoint ==========*/
+@media screen and (max-width:576px) {
+    nav{
+        padding-bottom: 40px;
+    }
+    .bars{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .hero-img .item1{
+        top:20%;
+    }
+    .hero-img .item2{
+        bottom:15%;
+    }
+    .hero button{
+        padding: 15px 23px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+        
+    }
+    .hero button.hero-btn2{
+        margin-left: 5px;
+    }
+    .btn-wrapper{
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 3rem;
+        line-height: 3.rem;
+    }
+    .hero h1 span{
+        font-size: 4rem;
+    }
+}
