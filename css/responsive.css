@@ -1,70 +1,197 @@
 /*========= Medium Device Breakpoint ==========*/
 
 @media screen and (max-width:991px) {
-    nav{
+    nav {
         padding-bottom: 60px;
     }
-    nav ul{
-        gap:0;
+
+    nav ul {
+        gap: 0;
     }
-    .hero img{
+
+    .hero img {
         width: 100%;
-        margin-left:0 ;
+        margin-left: 0;
     }
-    .hero{
+
+    .hero {
         flex-direction: column;
-        gap:40px
+        gap: 40px;
     }
-    header{
+
+    header {
         height: auto;
     }
-    .hero-img .item1{
-        top:23%;
-        right:0;
 
+    .hero-img .item1 {
+        top: 23%;
+        right: 0;
     }
-    .hero-img .item2{
-        bottom:12%;
-        left:0%;
+
+    .hero-img .item2 {
+        bottom: 12%;
+        left: 0;
+    }
+
+    .habit-wrapper {
+        display: grid;
+        text-align: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px
+    }
+
+    .joinnow-wrapper {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .joinnow-wrapper img {
+        transform: scaleX(1);
+    }
+
+    .calculate-wrapper {
+        flex-direction: column;
+        gap: 60px
+    }
+
+    .calculate-wrapper .calculate-table table {
+        border-collapse: collapse;
+        margin-top: 2.5rem;
+    }
+
+    .team-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 280px);
+        gap: 20px;
+    }
+
+    .footer-wrapper {
+        grid-template-columns: 100%;
+        gap: 50px
     }
 }
 
 
-
 /*========= Small Device Breakpoint ==========*/
+
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         padding-bottom: 40px;
     }
-    .bars{
+
+    .bars {
         display: block;
     }
-    nav ul{
+
+    nav ul {
         display: none;
     }
-    .hero-img .item1{
-        top:20%;
+
+    .hero-img .item1 {
+        top: 20%;
     }
-    .hero-img .item2{
-        bottom:15%;
+
+    .hero-img .item2 {
+        bottom: 15%;
     }
-    .hero button{
+
+    .hero button {
         padding: 15px 23px;
         font-size: 1rem;
         margin-bottom: 10px;
-        
     }
-    .hero button.hero-btn2{
+
+    .hero button.hero-btn2 {
         margin-left: 5px;
     }
-    .btn-wrapper{
+
+    .btn-wrapper {
         text-align: center;
     }
-    .hero h1{
+
+    .hero h1 {
         font-size: 3rem;
-        line-height: 3.rem;
+        line-height: 3.8rem;
     }
-    .hero h1 span{
+
+    .hero h1 span {
         font-size: 4rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        line-height: 1.5rem;
+        max-width: 95%;
+        font-size: 0.9rem;
+    }
+
+    .habit-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px
+    }
+
+    .habit-wrapper img {
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        opacity: 0.9;
+        padding: 0 2rem;
+    }
+
+    .joinnow-wrapper {
+        padding: 20px 30px;
+    }
+
+    .joinnow-wrapper p {
+        max-width: 100%;
+    }
+
+    .joinnow-wrapper h2 {
+        font-size: 2.5rem;
+    }
+
+    .joinnow-wrapper button {
+        width: 100%;
+    }
+
+    .calculate-wrapper .calculate-form form {
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 6px));
+        grid-template-rows: repeat(3, 40px);
+        gap: 12px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+    .team-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 300px);
+        gap: 25px;
+        padding: 25px;
+    }
+
+    .footer-wrapper {
+        gap: 40px
+    }
+
+    .footer-wrapper .footer-list {
+        grid-template-columns: 100%;
+        gap: 30px
+    }
+
+    footer .footer-content p {
+        width: 100%;
+    }
+
+    footer h3 {
+        margin-bottom: 25px;
     }
 }

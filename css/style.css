@@ -1,16 +1,19 @@
 /* ============ Common CSS ============== */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-body{
+
+body {
     font-family: "Inter", sans-serif;
+    background: #111;
 }
-.container{
+
+.container {
     max-width: 1190px;
     margin: 0 auto;
     padding: 0 20px;
@@ -18,80 +21,115 @@ body{
 
 /* ============ Reuseable Components ============== */
 
-.section-title{
+.section-title {
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-size: 2.3rem;
     font-weight: 900;
 }
-.section-description{
+
+.section-description {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    margin-bottom: 30px;
+    padding-bottom: 3rem;
     line-height: 1.5rem;
+    max-width: 55%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* ============ Header Part Starts ============== */
 
-header{
-    background:#222;
+header {
+    background: linear-gradient(#222, #111);
     height: 100vh;
     overflow: hidden;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
     align-items: center;
 }
-nav ul{
+
+nav ul {
     display: flex;
-    gap:30px
+    gap: 30px
 }
-nav h3{
+
+nav h3 {
     color: rgb(230, 83, 60);
     font-size: 2rem;
     font-weight: 700;
     font-style: italic;
 }
-nav ul{
+
+nav ul {
     border-radius: 50px;
-    border:1px solid rgba(255,255,255,0.07);
-    padding:11px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    padding: 11px 4px;
 }
-nav li a{
-    color:#fffffff3;
-    padding:8px 20px;
+
+nav li a {
+    color: #fffffff3;
+    padding: 8px 20px;
     font-weight: 500;
 }
-nav li a.active{
+
+nav li a.active {
     background: rgb(230, 83, 60);
     border-radius: 50px;
 }
-.bars{
+
+.bars {
     display: none;
 }
-.bars i{
-    color:#fffffff3;
+
+.bars i {
+    color: #fffffff3;
     font-size: 2.2rem;
 }
-.hero{
+
+.hero {
     display: flex;
     align-items: center;
 }
-.hero > div{
-    flex:1
+
+.hero>div {
+    flex: 1
 }
-.hero img{
+
+.hero img {
     width: 55%;
-    margin-left:120px ;
+    margin-left: 120px;
 }
-.hero .hero-img{
+
+.hero .hero-img {
     text-align: center;
-    position:relative
+    position: relative
 }
-.hero h1{
+
+.hero h1 {
     color: rgb(255, 255, 255);
     font-size: 4rem;
     font-weight: 800;
@@ -100,78 +138,376 @@ nav li a.active{
     margin-bottom: 20px;
     line-height: 4.8rem;
 }
-.hero h1 span{
+
+.hero h1 span {
     font-style: italic;
     font-family: "Dancing Script", cursive;
     font-weight: 100;
     font-size: 5rem;
 }
-.hero p{
-    color: rgba(255, 255, 255,0.5);
+
+.hero p {
+    color: rgba(255, 255, 255, 0.5);
     line-height: 1.5rem;
     margin-bottom: 30px;
 }
-.hero button{
-    background:  rgb(230, 83, 60);
-    color:#fffffff3;
+
+.hero button {
+    background: rgb(230, 83, 60);
+    color: #fffffff3;
     padding: 15px 35px;
     border-radius: 50px;
-    border:none;
+    border: none;
     cursor: pointer;
     font-weight: 600;
     font-size: 1.05rem;
 }
-.hero button.hero-btn2{
-    background:none;
-    border:thin solid rgba(255, 255, 255,0.5);
+
+.hero button.hero-btn2 {
+    background: none;
+    border: thin solid rgba(255, 255, 255, 0.5);
     margin-left: 10px;
 }
-.hero-img .item1{
-    background: rgba(255, 255, 255,0.1);
-    color:rgb(255, 255, 255);
+
+.hero-img .item1 {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
-    position:absolute;
-    top:23%;
-    right:2%;
+    position: absolute;
+    top: 23%;
+    right: 2%;
     text-align: left;
     backdrop-filter: blur(5px);
 }
-.hero-img .item2{
-    background: rgba(255, 255, 255,0.1);
-    color:rgb(255, 255, 255);
+
+.hero-img .item2 {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 10px;
-    position:absolute;
-    bottom:12%;
-    left:17%;
+    position: absolute;
+    bottom: 12%;
+    left: 17%;
     text-align: left;
     backdrop-filter: blur(5px);
     display: flex;
-    align-items:center;
-    gap:15px
+    align-items: center;
+    gap: 15px
 }
-.item2 .item2-icon i{
+
+.item2 .item2-icon i {
     background: rgb(230, 83, 60);
-    color:#fff;
+    color: #fff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: grid;
     place-items: center
 }
+
 .item1 h2,
-.item2 h2{
+.item2 h2 {
     font-size: 2rem;
     font-weight: 800;
 }
+
 .item1 h5,
-.item2 h5{
-    color:rgba(255, 255, 255,0.7);
+.item2 h5 {
+    color: rgba(255, 255, 255, 0.7);
     font-weight: 400;
+}
+
+/* ============ Header Part Ends ============== */
+
+
+/* =========== Habit Section Starts ========== */
+
+.habit-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.habit-wrapper>div {
+    flex: 1
+}
+
+.habit-wrapper img {
+    width: 70%;
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.card p {
+    line-height: 1.4rem;
+    opacity: 0.9;
+    padding: 0 20px;
+    font-weight: 300;
+}
+
+/* =========== Habit Section Ends ========== */
+
+
+/* =========== JoinNow Section Starts ========== */
+
+#joinnow {
+    padding-top: 30px;
+}
+
+.joinnow-wrapper {
+    display: flex;
+    background: #222;
+    border-radius: 15px;
+    padding: 30px 45px;
+    align-items: center;
+
+}
+
+.joinnow-wrapper button,
+.calculate-wrapper button {
+    background: rgb(230, 83, 60);
+    color: #fffffff3;
+    padding: 12px 55px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.joinnow-wrapper h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.joinnow-wrapper p {
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+    max-width: 85%;
+}
+
+.joinnow-wrapper img {
+    width: 100%;
+    border-radius: 15px;
+    transform: scaleX(0.9);
+}
+
+.joinnow-wrapper>div {
+    flex: 1
 }
 
 
 
 
-/* ============ Header Part Ends ============== */
+
+
+
+
+/* =========== JoinNow Section Ends ========== */
+
+
+/* =========== Calculate Section Starts ========== */
+#calculate {
+    padding: 50px 0;
+    background: #222;
+}
+
+.bmi .section-title {
+    text-align: left;
+}
+
+.bmi .section-description {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.calculate-wrapper {
+    display: flex;
+}
+
+.calculate-wrapper>div {
+    flex: 1
+}
+
+.calculate-wrapper h2 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.calculate-wrapper p {
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.calculate-wrapper .calculate-table table {
+    border-collapse: collapse;
+    margin-top: 3.5rem;
+}
+
+.calculate-wrapper .calculate-table td {
+    border: thin solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    padding: 13px 25px;
+}
+
+.calculate-wrapper .calculate-table th {
+    border: thin solid rgba(255, 255, 255, 0.3);
+    color: rgb(255, 255, 255);
+    padding: 13px 25px;
+}
+
+.calculate-wrapper .calculate-form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    gap: 12px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.calculate-form form select.activity {
+    grid-column: span 2;
+}
+
+.calculate-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.calculate-form input,
+.calculate-form select {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 15px;
+    background: #333;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* =========== Calculate Section Ends ========== */
+
+
+
+/* =========== Team Section Starts ========== */
+
+.team-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    gap: 20px;
+    background: #222;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.team-wrapper .team-box {
+    position: relative;
+}
+
+.team-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: brightness(70%);
+}
+
+.team-box .team-desc {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.team-box h3 {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.team-box p {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+/* =========== Team Section Ends ========== */
+
+
+/* =========== Footer Part Starts ========== */
+
+footer {
+    padding: 50px 0 40px;
+    background: #222;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 30px;
+}
+
+.footer-wrapper .footer-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .container>p {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 35px;
+}
+
+footer h2 {
+    color: rgb(230, 83, 60);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+footer .footer-content p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.7rem;
+    width: 80%;
+    font-weight: 300;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+footer ul li {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px;
+    font-weight: 300;
+
+}
+
+footer hr {
+    color: rgba(255, 255, 255, 0.2);
+    opacity: 0.1;
+}
+
+/* =========== Footer Part Ends ========== */
