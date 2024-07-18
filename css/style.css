@@ -290,6 +290,7 @@ nav li a.active {
     margin-bottom: 20px;
     font-size: 2.7rem;
     font-weight: 800;
+    letter-spacing: 0.1rem;
 }
 
 .joinnow-wrapper p {
@@ -375,7 +376,7 @@ nav li a.active {
 .calculate-wrapper .calculate-form form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 40px);
+    grid-template-rows: repeat(3, 45px);
     gap: 12px;
     margin-bottom: 25px;
     margin-top: 10px;
@@ -394,7 +395,7 @@ nav li a.active {
     border: none;
     outline: none;
     border-radius: 5px;
-    padding: 0 15px;
+    padding: 0 20px;
     background: #333;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -408,7 +409,7 @@ nav li a.active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 280px);
-    gap: 20px;
+    gap: 25px;
     background: #222;
     padding: 25px;
     border-radius: 15px;
@@ -447,6 +448,9 @@ nav li a.active {
 
 
 /* =========== Pricing Section Starts ========== */
+#pricing {
+    padding-top: 20px;
+}
 
 .pricing-wrapper {
     display: flex;

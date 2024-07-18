@@ -125,7 +125,8 @@
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        letter-spacing: 0.1rem;
     }
 
     .section-description {
@@ -160,7 +161,8 @@
     }
 
     .joinnow-wrapper h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        font-weight: 700;
     }
 
     .joinnow-wrapper button {
