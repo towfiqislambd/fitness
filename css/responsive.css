@@ -125,14 +125,14 @@
     }
 
     .section-title {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         letter-spacing: 0.1rem;
     }
 
     .section-description {
         line-height: 1.5rem;
         max-width: 95%;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .habit-wrapper {
