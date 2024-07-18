@@ -26,7 +26,7 @@ body {
     text-align: center;
     margin-bottom: 15px;
     font-size: 2.3rem;
-    font-weight:800;
+    font-weight: 800;
     word-spacing: .3rem;
     letter-spacing: .15rem;
 }
@@ -274,7 +274,7 @@ nav li a.active {
 }
 
 .joinnow-wrapper button,
-.calculate-wrapper button{
+.calculate-wrapper button {
     background: rgb(230, 83, 60);
     color: #fffffff3;
     padding: 12px 55px;
@@ -311,17 +311,11 @@ nav li a.active {
     flex: 1
 }
 
-
-
-
-
-
-
-
 /* =========== JoinNow Section Ends ========== */
 
 
 /* =========== Calculate Section Starts ========== */
+
 #calculate {
     padding: 50px 0;
     background: #222;
@@ -408,7 +402,6 @@ nav li a.active {
 /* =========== Calculate Section Ends ========== */
 
 
-
 /* =========== Team Section Starts ========== */
 
 .team-wrapper {
@@ -452,20 +445,23 @@ nav li a.active {
 
 /* =========== Team Section Ends ========== */
 
+
 /* =========== Pricing Section Starts ========== */
 
-.pricing-wrapper{
+.pricing-wrapper {
     display: flex;
-    gap:20px;
+    gap: 20px;
     justify-content: space-evenly;
 }
-.pricing-box{
+
+.pricing-box {
     padding: 30px 54px;
-    border:thin solid rgba(255, 255, 255, 0.062);
+    border: thin solid rgba(255, 255, 255, 0.062);
     border-radius: 10px;
     box-shadow: 2px 2px 5px #22222273;
     background: #22222223;
 }
+
 .pricing-wrapper button {
     background: rgb(230, 83, 60);
     color: #fffffff3;
@@ -476,39 +472,37 @@ nav li a.active {
     font-weight: 500;
     font-size: 1rem;
 }
-.pricing-box h3{
+
+.pricing-box h3 {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
 }
-.pricing-box h2{
+
+.pricing-box h2 {
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: 600;
 }
-.pricing-box h2 span{
+
+.pricing-box h2 span {
     font-size: 1.5rem;
 }
-.pricing-box ul li{
+
+.pricing-box ul li {
     margin: 20px 0;
-    color:rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
     font-weight: 300;
     font-size: 1.1rem;
 }
-.pricing-box ul li i{
+
+.pricing-box ul li i {
     color: rgb(230, 83, 60);
     font-size: 1rem;
     margin-right: 5px;
 }
+
 /* =========== Pricing Section Ends ========== */
-
-
-
-
-
-
-
-
 
 
 /* =========== Footer Part Starts ========== */
